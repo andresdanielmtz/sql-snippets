@@ -38,3 +38,11 @@ SELECT
 FROM Country c
 ORDER BY c.EuropeUnionMember DESC, c.Population DESC;
 
+-- Select Top 5
+
+SELECT TOP 5
+	*
+FROM Country c
+ORDER BY c.Population ASC;
+
+

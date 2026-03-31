@@ -45,4 +45,41 @@ SELECT TOP 5
 FROM Country c
 ORDER BY c.Population ASC;
 
+-- Conditionals
 
+SELECT 
+	* 
+FROM Country c
+WHERE c.Capital = 'Madrid';
+
+SELECT
+    *
+FROM Country c
+WHERE c.Population > 50000000;
+
+SELECT 
+	*
+FROM Country c
+WHERE c.Id != 2;
+
+SELECT 
+    *
+FROM Country c
+WHERE c.Id <= 3;
+
+SELECT 
+    *
+FROM Country c
+where c.Population >= 44e6; -- 44 millions -> 44,000,000
+
+SELECT
+    *
+FROM Country c
+WHERE c.EuropeUnionMember = 1 AND c.CurrencyCode != 'EUR';
+
+SELECT
+    *
+FROM Country c
+WHERE c.Capital = 'Amsterdam'
+OR c.Capital = 'Paris'
+OR c.Capital = 'Madrid';
